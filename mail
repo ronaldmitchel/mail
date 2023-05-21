@@ -1,0 +1,9 @@
+$to = "recipient@example.com";
+$subject = "Пример отправки почты";
+$message = "Привет, это тестовое письмо!";
+$headers = "From: sender@example.com";
+if (mail($to, $subject, $message, $headers)) {
+    echo "Почта успешно отправлена";
+} else {
+    echo "Ошибка при отправке почты";
+}
